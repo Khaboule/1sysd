@@ -3,9 +3,12 @@
 int main() {
     char s[] = "Bonjour !";
     char s2[] = { 66, 111, 110, 106, 111, 117, 114, 32, 33, 0 };
+    // attention : '\0' c'est pareil que 0 différent de '0' (89)
+    char s3[] = { 'B', 'o', 'n', 'j', 'o', 'u', 'r', ' ', '!', '\0' };
 
     printf("%s Ça va ?\n", s);
     printf("%s Ça va ?\n", s2);
+    printf("%s Ça va ?\n", s3);
 
     for (int i = 0; i < 10; i++) {
         printf("%d ", s[i]);
